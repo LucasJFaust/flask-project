@@ -18,7 +18,7 @@ def index():
         model = pickle.load(model_file)
 
     output = model.predict(df).tolist()
-    return output
+    return str(output)
 
 # Sempre no final de uma aplicação Flask temos que chamar o run
 if __name__ == '__main__':
